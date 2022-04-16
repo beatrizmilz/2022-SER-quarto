@@ -44,6 +44,10 @@ format:
 ## Sobre essa apresentação  {.center}
 
 
+<center>
+![](https://quarto.org/quarto.png){height="100"}</center>
+
+
 - `r emo::ji("x")` Tutorial sobre o Quarto
 
 - `r emo::ji("white_check_mark")` Minha experiência pessoal
@@ -81,6 +85,85 @@ knitr::include_graphics("https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp
 - Uso desde 2018!
 
 - Várias apresentações sobre R Markdown (especialmente apresentações com xaringan!): <https://beatrizmilz.com/talk/>
+
+- Gosto de acompanhar, testar as novidades e assistir palestras!
+
+##  {.center}
+
+
+No 3º R Day (setembro/2021), o Yihui Xie (criador do R Markdown) participou e disse: 
+
+>" The future?
+We have learned a lot in the last 10 years from those packages in the R Markdown ecosystem. **We are lauching a new, exciting and much bigger project.** Stay tuned." 
+
+Assista a apresentação no [Youtube](https://youtu.be/T24nt-d4cEg?t=2616).
+
+
+## ~~Stalkeando~~ Acompanhando  {.center}
+
+Encontrei uma nova organização no GitHub: [quarto-dev](https://github.com/quarto-dev)
+
+Algumas pessoas da RStudio estavam envolvidas no projeto
+
+Acompanhei e logo quis testar!
+
+<center>
+![](https://media.giphy.com/media/fSCbSLfLmTxEKmlRcy/giphy.gif){width="500" height="250"}</center>
+
+
+## Quarto  {.center}
+
+
+::: columns
+::: {.column width="45%"}
+
+```{r}
+#| fig.align: "center"
+#| out.width: "90%"
+knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.gif")
+```
+:::
+
+::: {.column width="50%"}
+
+- Meu primeiro commit usando Quarto foi em outubro de 2021
+
+
+- [Envio de sugestão](https://github.com/quarto-dev/quarto-web/issues/38)
+
+- [Contribuição](https://github.com/quarto-dev/quarto-cli/pull/182)
+
+
+:::
+:::
+
+## Quais são as similaridades?
+
+TO DO!
+
+## Quais são as (principais) diferenças?
+
+
+::: columns
+::: {.column width="50%"}
+
+### R Markdown
+
+TO DO!
+:::
+
+::: {.column width="50%"}
+
+### Quarto
+TO DO!
+
+:::
+:::
+
+## Como começar a usar o quarto
+
+TO DO!
+
 
 ## Obrigada! {.center}
 
