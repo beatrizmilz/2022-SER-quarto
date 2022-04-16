@@ -154,7 +154,133 @@ TO DO!
 
 ## Como começar a usar o quarto {.center}
 
-TO DO!
+[Instalar o Quarto:](https://quarto.org/docs/get-started/)
+
+<br>
+
+<center>
+
+<a href='https://quarto.org/docs/get-started/'> ![](img/install-quarto.png){style="width: 80%; !important" fig-alt="Print screen da página de instalação do Quarto" fig-align="center"} </a>
+
+</center>
+
+## Como começar a usar o quarto {.center}
+
+-   Escolha uma IDE. Exemplos que experimentei:
+    -   [RStudio](https://quarto.org/docs/get-started/hello/rstudio.html) - Experimente o [Visual Markdown Editor](https://rstudio.github.io/visual-markdown-editing/)
+    -   [Visual Studio code](https://quarto.org/docs/get-started/hello/vscode.html) - Instale também a [extensão do Quarto para VS Code](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+
+<br>
+
+<center>
+
+<a href='https://quarto.org/docs/get-started/'> ![](img/step-2.png){style="width: 80%; !important" fig-alt="Print screen da página de instalação do Quarto" fig-align="center"} </a>
+
+</center>
+
+## Quarto no RStudio
+
+::: panel-tabset
+## New File
+<center>![](img/rstudio-newfile.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+
+
+
+## New Project
+
+<center>![](img/rstudio-newproject.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+
+## Create Quarto Project
+
+<center>![](img/rstudio-create-quarto-project.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+
+## Projeto Quarto criado
+
+<center>![](img/rstudio-quarto-project-created.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+:::
+
+
+
+## Quarto no terminal
+
+Você também pode usar o terminal para utilizar o Quarto.
+
+
+
+### Exemplo: Ver comandos disponíveis
+
+``` bash
+quarto help
+```
+
+      Usage:   quarto 
+      Version: 0.9.243
+                      
+
+      Description:
+
+        Quarto CLI
+
+      Options:
+
+        -h, --help     - Show this help.                            
+        -V, --version  - Show the version number for this program.  
+
+      Commands:
+
+        render          [input] [args...]  - Render input file(s) to various document types.                                                
+        serve           [input]            - Serve an interactive document.                                                                 
+        create-project  [dir]              - Create a project for rendering multiple documents                                              
+        preview         [file] [args...]   - Render and preview a Quarto document or website project. Automatically reloads the browser when
+        convert         [input]            - Convert documents to alternate representations.                                                
+        capabilities                       - Query for current capabilities (output formats, engines, kernels etc.)                         
+        check           [target]           - Check and verify correct functioning of Quarto installation and computation engines.           
+        inspect         [path]             - Inspect a Quarto project or input path. Inspecting a project returns its config and engines.   
+        tools           [command] [tool]   - Manage the installation, update, and uninstallation of useful tools.                           
+        help            [command]          - Show this help or the help of a sub-command.    
+
+## Quarto no terminal
+
+<br>
+
+### Exemplo: Criar um projeto
+
+``` bash
+cd ~/Desktop
+quarto create-project exemplo-quarto-project
+```
+
+    Creating project at /Users/beatrizmilz/Desktop/exemplo-quarto-project:
+      - Created _quarto.yml
+      - Created exemplo-quarto-project.qmd
+
+## Quarto no terminal
+
+<br>
+
+### Exemplo: Renderizar os arquivos do projeto
+
+``` bash
+cd ~/Desktop/exemplo-quarto-project
+quarto render
+```
+
+    pandoc 
+      to: html
+      output-file: exemplo-quarto-project.html
+      standalone: true
+      section-divs: true
+      html-math-method: mathjax
+      wrap: none
+      default-image-extension: png
+      filters:
+        - crossref
+      
+    metadata
+      document-css: false
+      link-citations: true
+      lang: en
+      title: exemplo-quarto-project
 
 ## Dicas para acompanhar as novidades {.center}
 
@@ -174,19 +300,16 @@ TO DO!
 
 ## Materiais para ir mais longe {.center}
 
-
 [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) - Post em inglês por [Alison Hill](https://www.apreshill.com/)
 
 [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
 
 ![](https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif)
 
-
 ## Obrigada! {.center}
 
 ::: columns
 ::: {.column width="50%"}
-
 Agradecimentos:
 
 -   Julio Trecenti
@@ -195,9 +318,9 @@ Agradecimentos:
 
 -   Organização do [VI SER](https://ser.uff.br)
 
--  [Equipe de desenvolvimento do Quarto](https://github.com/quarto-dev/quarto-cli/graphs/contributors) e [JJ](https://github.com/jjallaire) 
+-   [Equipe de desenvolvimento do Quarto](https://github.com/quarto-dev/quarto-cli/graphs/contributors) e [JJ](https://github.com/jjallaire)
 
-- [Mine Çetinkaya-Rundel](https://mine-cr.com/) e [Alison Hill](https://www.apreshill.com/)
+-   [Mine Çetinkaya-Rundel](https://mine-cr.com/) e [Alison Hill](https://www.apreshill.com/)
 :::
 
 ::: {.column width="50%"}
@@ -207,11 +330,15 @@ Contato:
 
 <a href='mailto:milz.bea@gmail.com'><i class="far fa-envelope"></i></a> <a href='https://twitter.com/BeaMilz'><i class="fab fa-twitter"></i> <a href='https://github.com/beatrizmilz'><i class="fab fa-github"></i></a> <a href='https://beatrizmilz.github.io/resume/index.pdf'><i class="ai ai-cv"></i></a>
 
-
 </center>
 
--  Dúvidas no [Fórum discourse da Curso-R](https://discourse.curso-r.com/)
+-   Dúvidas no [Fórum discourse da Curso-R](https://discourse.curso-r.com/)
 
+<center>
+
+![](https://media.giphy.com/media/iYVneIXJQ3jdJLkZmM/giphy.gif)
+
+</center>
 :::
 :::
 
@@ -221,10 +348,3 @@ Contato:
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> <!-- final font awesome -->
-
-<!-- inicio github buttons  -->
-
-```{=html}
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-```
-<!-- final github buttons  -->
