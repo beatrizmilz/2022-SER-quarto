@@ -29,7 +29,6 @@ format:
 :::
 
 ::: {.column width="60%"}
-
 -   Professora na [Curso-R](https://curso-r.com/).
 
 -   Doutoranda em Ciência Ambiental (PROCAM/IEE/USP)
@@ -37,25 +36,24 @@ format:
 -   Co-organizadora da [R-Ladies São Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo) `r emo::ji("purple_heart")`
 
 -   [Instrutora de tidyverse certificada pela RStudio](https://education.rstudio.com/trainers/people/milz+beatriz/).
-
 :::
 :::
 
-## Sobre essa apresentação  {.center}
-
+## Sobre essa apresentação {.center}
 
 <center>
-![](https://quarto.org/quarto.png){height="100"}</center>
 
+![](https://quarto.org/quarto.png){height="100"}
 
-- `r emo::ji("x")` Tutorial sobre o Quarto
+</center>
 
-- `r emo::ji("white_check_mark")` Minha experiência pessoal
+-   `r emo::ji("x")` Tutorial sobre o Quarto
 
-- `r emo::ji("white_check_mark")` Dicas sobre o que eu aprendi até então
+-   `r emo::ji("white_check_mark")` Minha experiência pessoal
+
+-   `r emo::ji("white_check_mark")` Dicas sobre o que eu aprendi até então
 
 ## No começo...
-
 
 ```{r}
 #| fig.align: "center"
@@ -65,41 +63,38 @@ knitr::include_graphics("https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp
 
 ## R Markdown {.center}
 
-- [Pacote em R](https://rmarkdown.rstudio.com/), para criar documentos reprodutíveis.
+-   [Pacote em R](https://rmarkdown.rstudio.com/), para criar documentos reprodutíveis.
 
-- Muito usado na comunidade de R.
+-   Muito usado na comunidade de R.
 
-- Criado e mantido pela [RStudio](https://www.rstudio.com/).
+-   Criado e mantido pela [RStudio](https://www.rstudio.com/).
 
 ## R Markdown {.center}
 
-- Possui extensões que permitem produzir:
-  - Sites
-  - Blogs
-  - Apresentações
-  - Textos acadêmicos (artigos científicos, relatórios, teses, etc)
-  - Entre outros!
+-   Possui extensões que permitem produzir:
+    -   Sites
+    -   Blogs
+    -   Apresentações
+    -   Textos acadêmicos (artigos científicos, relatórios, teses, etc)
+    -   Entre outros!
 
-## Bea  `r emo::ji("purple_heart")` R Markdown  {.center}
+## Eu `r emo::ji("purple_heart")` R Markdown {.center}
 
-- Uso desde 2018!
+-   Uso desde 2018!
 
-- Várias apresentações sobre R Markdown (especialmente apresentações com xaringan!): <https://beatrizmilz.com/talk/>
+-   Várias apresentações sobre R Markdown (especialmente apresentações com xaringan!): <https://beatrizmilz.com/talk/>
 
-- Gosto de acompanhar, testar as novidades e assistir palestras!
+-   Gosto de acompanhar, testar as novidades e assistir palestras!
 
 ##  {.center}
 
+No 3º R Day (setembro/2021), o Yihui Xie (criador do R Markdown) participou e disse:
 
-No 3º R Day (setembro/2021), o Yihui Xie (criador do R Markdown) participou e disse: 
-
->" The future?
-We have learned a lot in the last 10 years from those packages in the R Markdown ecosystem. **We are lauching a new, exciting and much bigger project.** Stay tuned." 
+> " The future? We have learned a lot in the last 10 years from those packages in the R Markdown ecosystem. **We are lauching a new, exciting and much bigger project.** Stay tuned."
 
 Assista a apresentação no [Youtube](https://youtu.be/T24nt-d4cEg?t=2616).
 
-
-## ~~Stalkeando~~ Acompanhando  {.center}
+## ~~Stalkeando~~ Acompanhando {.center}
 
 Encontrei uma nova organização no GitHub: [quarto-dev](https://github.com/quarto-dev)
 
@@ -108,15 +103,15 @@ Algumas pessoas da RStudio estavam envolvidas no projeto
 Acompanhei e logo quis testar!
 
 <center>
-![](https://media.giphy.com/media/fSCbSLfLmTxEKmlRcy/giphy.gif){width="500" height="250"}</center>
 
+![](https://media.giphy.com/media/fSCbSLfLmTxEKmlRcy/giphy.gif){width="500" height="250"}
 
-## Quarto  {.center}
+</center>
 
+## Quarto {.center}
 
 ::: columns
 ::: {.column width="45%"}
-
 ```{r}
 #| fig.align: "center"
 #| out.width: "90%"
@@ -125,67 +120,100 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 :::
 
 ::: {.column width="50%"}
+-   Comecei a usar o Quarto em outubro de 2021
 
-- Meu primeiro commit usando Quarto foi em outubro de 2021
+-   [Enviei uma sugestão](https://github.com/quarto-dev/quarto-web/issues/38) (outubro/2021)
 
-
-- [Envio de sugestão](https://github.com/quarto-dev/quarto-web/issues/38)
-
-- [Contribuição](https://github.com/quarto-dev/quarto-cli/pull/182)
-
-
+-   [Enviei uma contribuição](https://github.com/quarto-dev/quarto-cli/pull/182) (novembro/2021)
 :::
 :::
 
-## Porque o Quarto existe?
+## Porque o Quarto existe? {.center}
 
 TO DO
 
-## Quais são as similaridades?
+## Quais são as similaridades? {.center}
 
 TO DO!
 
-## Quais são as (principais) diferenças?
-
+## Quais são as (principais) diferenças? {.center}
 
 ::: columns
 ::: {.column width="50%"}
-
 ### R Markdown
 
 TO DO!
 :::
 
 ::: {.column width="50%"}
-
 ### Quarto
 
 TO DO!
-
 :::
 :::
 
-## Como começar a usar o quarto
-
+## Como começar a usar o quarto {.center}
 
 TO DO!
 
-## Futurologia
+## Dicas para acompanhar as novidades {.center}
 
-TO DO! 
+-   Atualize o [Quarto](https://quarto.org/docs/get-started/) com frequência!
 
-https://github.com/quarto-dev/quarto-cli/discussions/405
+-   Caso você utilize o RStudio, [mantenha-o atualizado também](https://www.rstudio.com/products/rstudio/download/#download).
 
-Acompanhe nas [discussions do GitHub](https://github.com/quarto-dev/quarto-cli/discussions) 
+-   Siga e acompanhe o Twitter: [\@quarto_pub](https://twitter.com/quarto_pub)
+
+-   Acompanhe as [discussions no GitHub](https://github.com/quarto-dev/quarto-cli/discussions)
+
+## Futurologia {.center}
+
+-   O plano é lançar o Quarto versão 1.0 na rstudio::conf [#463](https://github.com/quarto-dev/quarto-cli/discussions/463#discussioncomment-2437882)
+
+-   Edição colaborativa online? [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
+
+## Materiais para ir mais longe {.center}
+
+
+[Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) - Post em inglês por [Alison Hill](https://www.apreshill.com/)
+
+[Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
+
+![](https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif)
 
 
 ## Obrigada! {.center}
 
-```{r}
-#| fig.align: "center"
-#| out.width: "60%"
-knitr::include_graphics("https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif")
-```
+::: columns
+::: {.column width="50%"}
+
+Agradecimentos:
+
+-   Julio Trecenti
+
+-   Steven Ross
+
+-   Organização do [VI SER](https://ser.uff.br)
+
+-  [Equipe de desenvolvimento do Quarto](https://github.com/quarto-dev/quarto-cli/graphs/contributors) e [JJ](https://github.com/jjallaire) 
+
+- [Mine Çetinkaya-Rundel](https://mine-cr.com/) e [Alison Hill](https://www.apreshill.com/)
+:::
+
+::: {.column width="50%"}
+Contato:
+
+<center>
+
+<a href='mailto:milz.bea@gmail.com'><i class="far fa-envelope"></i></a> <a href='https://twitter.com/BeaMilz'><i class="fab fa-twitter"></i> <a href='https://github.com/beatrizmilz'><i class="fab fa-github"></i></a> <a href='https://beatrizmilz.github.io/resume/index.pdf'><i class="ai ai-cv"></i></a>
+
+
+</center>
+
+-  Dúvidas no [Fórum discourse da Curso-R](https://discourse.curso-r.com/)
+
+:::
+:::
 
 <!-- inicio font awesome -->
 
