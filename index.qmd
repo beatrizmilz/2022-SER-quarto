@@ -1,6 +1,6 @@
 ---
 title: "Quarto:"
-subtitle: "Conhecendo a nova geração do R Markdown"
+subtitle: "Conhecendo a evolução do R Markdown"
 
 author: "[Beatriz Milz](https://beatrizmilz.com) no [VI SER <br>  International Seminar on Statistics with R](https://ser.uff.br)"
 date: "Maio de 2022"
@@ -73,7 +73,7 @@ knitr::include_graphics("https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp
 
 ## R Markdown {.center}
 
-- Possui extensões que permite produzir:
+- Possui extensões que permitem produzir:
   - Sites
   - Blogs
   - Apresentações
@@ -137,6 +137,10 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 :::
 :::
 
+## Porque o Quarto existe?
+
+TO DO
+
 ## Quais são as similaridades?
 
 TO DO!
@@ -155,6 +159,7 @@ TO DO!
 ::: {.column width="50%"}
 
 ### Quarto
+
 TO DO!
 
 :::
@@ -162,7 +167,16 @@ TO DO!
 
 ## Como começar a usar o quarto
 
+
 TO DO!
+
+## Futurologia
+
+TO DO! 
+
+https://github.com/quarto-dev/quarto-cli/discussions/405
+
+Acompanhe nas [discussions do GitHub](https://github.com/quarto-dev/quarto-cli/discussions) 
 
 
 ## Obrigada! {.center}
