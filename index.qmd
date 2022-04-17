@@ -205,9 +205,10 @@ TO DO!
 
 Você também pode usar o terminal para utilizar o Quarto.
 
+::: panel-tabset
 
 
-### Exemplo: Ver comandos disponíveis
+## Ver comandos disponíveis
 
 ``` bash
 quarto help
@@ -239,11 +240,8 @@ quarto help
         tools           [command] [tool]   - Manage the installation, update, and uninstallation of useful tools.                           
         help            [command]          - Show this help or the help of a sub-command.    
 
-## Quarto no terminal
 
-<br>
-
-### Exemplo: Criar um projeto
+## Criar um projeto
 
 ``` bash
 cd ~/Desktop
@@ -254,11 +252,7 @@ quarto create-project exemplo-quarto-project
       - Created _quarto.yml
       - Created exemplo-quarto-project.qmd
 
-## Quarto no terminal
-
-<br>
-
-### Exemplo: Renderizar os arquivos do projeto
+## Renderizar
 
 ``` bash
 cd ~/Desktop/exemplo-quarto-project
@@ -281,6 +275,24 @@ quarto render
       link-citations: true
       lang: en
       title: exemplo-quarto-project
+
+::: 
+
+
+
+## Quarto no VS Code
+
+::: panel-tabset
+## TO DO
+
+TO DO!
+
+
+:::
+
+
+
+
 
 ## Dicas para acompanhar as novidades {.center}
 
