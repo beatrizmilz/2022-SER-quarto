@@ -1,0 +1,64 @@
+---
+title: "Experimentando o Quarto"
+format: 
+  html: 
+    code-link: true
+    code-copy: true
+editor: visual
+lang: pt-br
+execute:
+  message: false
+  warning: false
+  echo: true
+---
+
+## Quarto
+
+O Quarto é a evolução do R Markdown! Explore este arquivo para ver algumas possibilidades :)\
+Veja também a documentação em: <https://quarto.org>.
+
+## Exemplos com código em R
+
+```{r}
+#| label: pacotes
+library(dplyr)
+library(ggplot2)
+```
+
+Você já conhece o pacote [dados](https://cienciadedatos.github.io/dados/)?
+
+```{r}
+#| label: pacote-dados
+library(dados)
+glimpse(dados_starwars)
+```
+
+A base `dados::dados_starwars` apresenta informações sobre `r nrow(dados_starwars)` personagens da série de filmes Star Wars ⭐
+
+![](img/starwars.png){fig-align="center"}
+
+### Gráfico com ggplot2
+
+```{r}
+#| label: grafico-starwars
+#| fig-align: center
+#| out-width: 90%
+#| dpi: 300
+dados_starwars %>% 
+  ggplot() +
+  geom_point(aes(x = massa, y = altura)) +
+  theme_light() + 
+  gghighlight::gghighlight(nome == "Darth Vader", label_key = nome) +
+  labs(x = "Massa", y = "Altura")
+```
+
+### Tabelas
+
+```{r}
+dados_starwars %>% 
+  tidyr::drop_na(especie) %>% 
+  count(especie, sort = TRUE) %>% 
+  slice(1:10) %>% 
+  knitr::kable(col.names = c("Espécie",
+                             "Quantidade de personagens"))
+```
