@@ -40,13 +40,11 @@ format:
 
 ## Curso-R {.center}
 
-
 <center>
 
 ![](https://d33wubrfki0l68.cloudfront.net/295643c6243701ae6a9bac3fb8ad467ff0ce3c84/d1785/img/logo/cursor1-41.png){style="width: 50%; !important" fig-alt="Logo da Curso-R" fig-align="center"}
 
 </center>
-
 
 ## Filosofia de código aberto!
 
@@ -187,6 +185,30 @@ Acompanhei e logo quis testar!
 
 </center>
 
+## Pequeno parênteses: RStudio
+
+![](img/rstudio.png){.absolute top="100" left="600" width="800"}
+
+-   Mais conhecida pela IDE RStudio
+
+-   É uma companhia criada em 2009
+
+-   Tem uma grande equipe de pessoas que trabalham no desenvolvimento de pacotes em R
+
+-   Organizam a [RStudio Conference](https://www.rstudio.com/conference/) (em 2020 com mais de 2200 participantes)
+
+-   É muito próxima da comunidade
+
+-   É a empresa privada mais importante no contexto da linguagem de programação R do mundo (**minha opinião**)
+
+-   [Saiba mais neste link](https://www.rstudio.com/about/)!
+
+## O que é o Quarto? {.center}
+
+-   Segundo a documentação oficial, o Quarto é um sistema de escrita técnica e científica, de código aberto, baseada no [Pandoc](https://pandoc.org/).
+
+-   O Pandoc é um sistema de conversão de documentos em vários formatos, e também é usado no R Markdown.
+
 ## Quarto {.center}
 
 ::: columns
@@ -209,27 +231,119 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 
 ## Porque o Quarto existe? {.center}
 
-TO DO
+-   O R Markdown é um pacote em R.
+    Para usá-lo, é necessário ter o R instalado (mesmo que o seu arquivo não tenha conteúdos em R).
+
+-   O R Markdown é uma ferramenta muito boa para escrita técnica e científica reprodutível, possibilitando criar vários tipos de documentos.
+    Porém, **o seu uso acaba ficando limitado à comunidade de pessoas que usam R**.
+
+-   **O Quarto é um software novo, que não depende do R**!
+
+::: notes
+-   Por exemplo: Você pode usar o VSCode como IDE, escrever um documento com código em Python e gerar o documento final. Tudo isso sem precisar ter o R e/ou RStudio instalados.
+:::
 
 ## Quais são as similaridades? {.center}
 
-TO DO!
+- A estrutura do arquivo é muito similar! Para muitos arquivos, há compatibilidade (bastando alterar a extensão de `.Rmd` para `.qmd`).
 
-## Quais são as (principais) diferenças? {.center}
+- Podemos adicionar código em R, Python, Julia, etc etc.
+
+- Podemos criar diversos tipos de arquivos, como:
+  - Páginas da internet (arquivos `.html`)
+  - PDFs
+  - Words
+  - Apresentações
+  - Documentos interativos
+  - Livros
+  - E mais está sendo produzido :)
+
+Veja a galeria: <https://quarto.org/docs/gallery>
+
+## Quais são as (principais) diferenças? 
+
+::: panel-tabset
+## Necessidade do R
 
 ::: columns
 ::: {.column width="50%"}
 ### R Markdown
 
-TO DO!
+- É um pacote em R.
+
+- Precisamos ter o R instalado para renderizar o arquivo R Markdown.
 :::
 
 ::: {.column width="50%"}
 ### Quarto
 
-TO DO!
+- É um outro software, precisa ser instalado.
+
+- Não precisamos do R para renderizar o arquivo.
+
 :::
 :::
+
+## Extensão
+
+::: columns
+::: {.column width="50%"}
+### R Markdown
+
+- .Rmd
+:::
+
+::: {.column width="50%"}
+### Quarto
+
+- .qmd
+
+:::
+:::
+
+
+## Boostrap
+::: columns
+::: {.column width="50%"}
+### R Markdown
+
+-   [Bootstrap](https://getbootstrap.com/): Por padrão, usa o v3.3.5. 
+
+- Para usar versões recentes do bootstrap, é necessário usar o pacote [bslib](https://rstudio.github.io/bslib/reference/index.html) [#1260](https://github.com/rstudio/rmarkdown/issues/1260)
+:::
+
+::: {.column width="50%"}
+### Quarto
+
+-   [Bootstrap](https://getbootstrap.com/) v5.
+:::
+:::
+
+## Observable JS
+
+
+::: columns
+::: {.column width="50%"}
+### R Markdown
+
+- Não tem suporte ao Observable JS.
+:::
+
+::: {.column width="50%"}
+### Quarto
+
+- Tem suporte ao Observable JS.
+:::
+:::
+
+
+- [Observable JS](https://observablehq.com/tutorials): Usado para criar visualizações de dados interativas.
+
+
+
+:::
+
+
 
 ## Como começar a usar o quarto {.center}
 
@@ -247,7 +361,7 @@ TO DO!
 
 -   Escolha uma IDE. Exemplos que experimentei:
     -   [RStudio](https://quarto.org/docs/get-started/hello/rstudio.html) - Experimente o [Visual Markdown Editor](https://rstudio.github.io/visual-markdown-editing/)
-    -  [RStudio Cloud](https://rstudio.cloud/) 
+    -   [RStudio Cloud](https://rstudio.cloud/)
     -   [Visual Studio code](https://quarto.org/docs/get-started/hello/vscode.html) - Instale também a [extensão do Quarto para VS Code](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
 
 <br>
@@ -297,18 +411,17 @@ TO DO!
 ## Quarto no RStudio Cloud
 
 ::: panel-tabset
-
 ## Diferenças
 
-- Similar ao RStudio: <https://rstudio.cloud/>
+-   Similar ao RStudio: <https://rstudio.cloud/>
 
-- O quarto já vem instalado! 
+-   O quarto já vem instalado!
 
-- Não tem a opção (até agora) de usar o "New project", apenas o "New file".
+-   Não tem a opção (até agora) de usar o "New project", apenas o "New file".
 
-- Atenção aos pacotes que é importante instalar antes:
+-   Atenção aos pacotes que é importante instalar antes:
 
-```r
+``` r
 install.packages("jsonlite")
 install.packages("rmarkdown")
 install.packages("htmltools")
@@ -329,9 +442,7 @@ install.packages("htmltools")
 ![](img/rstudio-cloud-2.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio Cloud" fig-align="center"}
 
 </center>
-
 :::
-
 
 ## Quarto no terminal
 
@@ -414,7 +525,6 @@ quarto render
 
 </center>
 
-
 ## Dicas para acompanhar as novidades {.center}
 
 -   Atualize o [Quarto](https://quarto.org/docs/get-started/) com frequência!
@@ -425,9 +535,10 @@ quarto render
 
 -   Acompanhe as [discussions no GitHub](https://github.com/quarto-dev/quarto-cli/discussions)
 
-- Acompanhe o evento [rstudio:conf 2022](https://www.rstudio.com/conference/) 
-  - Keynote por [Mine Çetinkaya-Rundel](https://mine-cr.com/) & [Julia Stewart Lowndes](https://jules32.github.io/): Publishing and collaboration with Quarto.
-  - Estarei por lá! Me siga em [twitter.com/BeaMilz](https://twitter.com/BeaMilz)
+-   Acompanhe o evento [rstudio:conf 2022](https://www.rstudio.com/conference/)
+
+    -   Keynote por [Mine Çetinkaya-Rundel](https://mine-cr.com/) & [Julia Stewart Lowndes](https://jules32.github.io/): Publishing and collaboration with Quarto.
+    -   Estarei por lá! Me siga em [twitter.com/BeaMilz](https://twitter.com/BeaMilz)
 
 ## Futurologia {.center}
 
@@ -435,9 +546,9 @@ quarto render
 
 -   Edição colaborativa online?
     [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
-    
--   Com a chegada do Quarto, o R Markdown vai desaparecer? [Post em inglês por Yihui Xie](https://yihui.org/en/2022/04/quarto-r-markdown/) 
 
+-   Com a chegada do Quarto, o R Markdown vai desaparecer?
+    [Post em inglês por Yihui Xie](https://yihui.org/en/2022/04/quarto-r-markdown/)
 
 ## Materiais para ir mais longe {.center .smaller}
 
@@ -449,14 +560,14 @@ quarto render
 
 -   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
 
--   [Com a chegada do Quarto, o R Markdown vai desaparecer? Não.](https://yihui.org/en/2022/04/quarto-r-markdown/) - Post em inglês por [Yihui Xie](https://yihui.org/en/about/)
+-   [Com a chegada do Quarto, o R Markdown vai desaparecer? Não.](https://yihui.org/en/2022/04/quarto-r-markdown/)
+    - Post em inglês por [Yihui Xie](https://yihui.org/en/about/)
 :::
 
 ::: {.column width="50%"}
 ![](https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif)
 :::
 :::
-
 
 ## Obrigada! {.center}
 
