@@ -170,7 +170,7 @@ No 3º R Day (setembro/2021), o Yihui Xie (criador do R Markdown) participou e d
 
 > " The future? We have learned a lot in the last 10 years from those packages in the R Markdown ecosystem. **We are lauching a new, exciting and much bigger project.** Stay tuned."
 
-Assista a apresentação no [Youtube](https://youtu.be/T24nt-d4cEg?t=2616).
+Assista a apresentação no [YouTube](https://youtu.be/T24nt-d4cEg?t=2616).
 
 ## ~~Stalkeando~~ Acompanhando {.center}
 
@@ -186,7 +186,7 @@ Acompanhei e logo quis testar!
 
 </center>
 
-## Pequeno parênteses: RStudio
+## Pequeno parêntese: RStudio
 
 ![](img/rstudio.png){.absolute top="100" left="600" width="800"}
 
@@ -196,9 +196,9 @@ Acompanhei e logo quis testar!
 
 -   Tem uma grande equipe de pessoas que trabalham no desenvolvimento de pacotes em R
 
--   Organizam a [RStudio Conference](https://www.rstudio.com/conference/) (em 2020 com mais de 2200 participantes)
+-   Organizam a [rstudio::conf](https://www.rstudio.com/conference/) (em 2020 com mais de 2200 participantes)
 
--   É muito próxima da comunidade
+-   É muito próxima da comunidade e uma [B Corporation](https://www.bcorporation.net/pt-br/)
 
 -   É a empresa privada mais importante no contexto da linguagem de programação R do mundo (**minha opinião**)
 
@@ -232,11 +232,11 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 
 ## Porque o Quarto existe? {.center}
 
--   O R Markdown é um pacote em R.
+-   O `{rmarkdown}` é um pacote em R.
     Para usá-lo, é necessário ter o R instalado (mesmo que o seu arquivo não tenha conteúdos em R).
 
 -   O R Markdown é uma ferramenta muito boa para escrita técnica e científica reprodutível, possibilitando criar vários tipos de documentos.
-    Porém, **o seu uso acaba ficando limitado à comunidade de pessoas que usam R**.
+    Porém, **o seu uso acaba ficando limitado às pessoas que usam R**.
 
 -   **O Quarto é um software novo, que não depende do R**!
 
@@ -535,7 +535,7 @@ quarto render
 
 -   Acompanhe as [discussions no GitHub](https://github.com/quarto-dev/quarto-cli/discussions)
 
--   Acompanhe o evento [rstudio:conf 2022](https://www.rstudio.com/conference/)
+-   Acompanhe o evento [rstudio::conf 2022](https://www.rstudio.com/conference/)
 
     -   Keynote por [Mine Çetinkaya-Rundel](https://mine-cr.com/) & [Julia Stewart Lowndes](https://jules32.github.io/): Publishing and collaboration with Quarto.
     -   Estarei por lá! Me siga em [twitter.com/BeaMilz](https://twitter.com/BeaMilz)
@@ -560,7 +560,6 @@ quarto render
 
 -   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) <br> Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
 
--   [Com a chegada do Quarto, o R Markdown vai desaparecer? Não.](https://yihui.org/en/2022/04/quarto-r-markdown/) <br> Post em inglês por [Yihui Xie](https://yihui.org/en/about/)
 :::
 
 ::: {.column width="50%"}
