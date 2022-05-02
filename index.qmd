@@ -2,7 +2,7 @@
 title: "Quarto:"
 subtitle: "Conhecendo a evolução do R Markdown"
 author: "[Beatriz Milz](https://beatrizmilz.com) • Curso-R | IEE/USP"
-date: "Maio de 2022 - [VI SER International Seminar on Statistics with R](https://ser.uff.br) <br><br> <br>Código: [github.com/beatrizmilz/2022-SER-quarto](https://github.com/beatrizmilz/2022-SER-quarto) <br> <br> Slides: [beatrizmilz.github.io/2022-SER-quarto/](https://beatrizmilz.github.io/2022-SER-quarto/) <br> Licença: "
+date: "Maio de 2022 - [VI SER International Seminar on Statistics with R](https://ser.uff.br) <br><br> <br>Código: [github.com/beatrizmilz/2022-SER-quarto](https://github.com/beatrizmilz/2022-SER-quarto) <br> <br> Slides: [beatrizmilz.github.io/2022-SER-quarto/](https://beatrizmilz.github.io/2022-SER-quarto/) <br><br> Licença: [CC BY-SA](https://beatrizmilz.com/license/)"
 format: 
   revealjs:
     incremental: true   
@@ -12,6 +12,7 @@ format:
     slide-number: c/t
     show-slide-number: all
     hash-type: number
+    preview-links: true
 ---
 
 ## Beatriz Milz {.center}
@@ -258,7 +259,6 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
   - Livros
   - E mais está sendo produzido :)
 
-Veja a galeria: <https://quarto.org/docs/gallery>
 
 ## Quais são as (principais) diferenças? 
 
@@ -554,14 +554,13 @@ quarto render
 
 ::: columns
 ::: {.column width="50%"}
--   [Documentação do Quarto](https://quarto.org/docs/gallery/)
+-   [Documentação do Quarto](https://quarto.org/docs/gallery/) e a [Galeria](https://quarto.org/docs/gallery)
 
--   [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) - Post em inglês por [Alison Hill](https://www.apreshill.com/)
+-   [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)  <br>Post em inglês por [Alison Hill](https://www.apreshill.com/)
 
--   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
+-   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) <br> Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
 
--   [Com a chegada do Quarto, o R Markdown vai desaparecer? Não.](https://yihui.org/en/2022/04/quarto-r-markdown/)
-    - Post em inglês por [Yihui Xie](https://yihui.org/en/about/)
+-   [Com a chegada do Quarto, o R Markdown vai desaparecer? Não.](https://yihui.org/en/2022/04/quarto-r-markdown/) <br> Post em inglês por [Yihui Xie](https://yihui.org/en/about/)
 :::
 
 ::: {.column width="50%"}

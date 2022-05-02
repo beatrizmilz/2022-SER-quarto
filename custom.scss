@@ -20,7 +20,7 @@ $font-family-monospace: 'Inconsolata', monospace  !default;
 $body-bg: #fff;
 $body-color: #000000;
 $link-color: #88398a;
-$presentation-font-size-root: 35px;
+$presentation-font-size-root: 33px;
 
 /*-- scss:rules --*/
 .reveal pre code {
@@ -34,6 +34,10 @@ $presentation-font-size-root: 35px;
 .subtitle, .author {
   color: $presentation-heading-color;
   font-size: $h2-font-size;
+}
+
+.date {
+  font-size: 0.8em;
 }
 
 .reveal .panel-tabset [role=tab] {
