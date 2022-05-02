@@ -1,9 +1,8 @@
 ---
 title: "Quarto:"
 subtitle: "Conhecendo a evolução do R Markdown"
-
-author: "[Beatriz Milz](https://beatrizmilz.com) no [VI SER <br>  International Seminar on Statistics with R](https://ser.uff.br)"
-date: "Maio de 2022"
+author: "[Beatriz Milz](https://beatrizmilz.com) • Curso-R | IEE/USP"
+date: "Maio de 2022 - [VI SER International Seminar on Statistics with R](https://ser.uff.br) <br><br> <br>Código: [github.com/beatrizmilz/2022-SER-quarto](https://github.com/beatrizmilz/2022-SER-quarto) <br> <br> Slides: [beatrizmilz.github.io/2022-SER-quarto/](https://beatrizmilz.github.io/2022-SER-quarto/) <br> Licença: "
 format: 
   revealjs:
     incremental: true   
@@ -38,6 +37,84 @@ format:
 -   [Instrutora de tidyverse certificada pela RStudio](https://education.rstudio.com/trainers/people/milz+beatriz/).
 :::
 :::
+
+## Curso-R {.center}
+
+
+<center>
+
+![](https://d33wubrfki0l68.cloudfront.net/295643c6243701ae6a9bac3fb8ad467ff0ce3c84/d1785/img/logo/cursor1-41.png){style="width: 50%; !important" fig-alt="Logo da Curso-R" fig-align="center"}
+
+</center>
+
+
+## Filosofia de código aberto!
+
+::: columns
+::: {.column width="50%"}
+```{r, echo = FALSE}
+
+link <- function(href, ...) {
+  htmltools::a(
+    href = href,
+    target = "_blank",
+    ...
+  )
+}
+
+htmltools::h3("Livros")
+
+link(
+  href = "https://livro.curso-r.com/",
+  htmltools::img(src = "img/hex-livro.png", width = "200px",
+   style = "margin-left: 200px;")
+)
+
+link(
+  href = "https://curso-r.github.io/zen-do-r/index.html",
+  htmltools::img(
+    src = "img/zen-do-r.png",
+    width = "200px",
+   style = "margin-left: 50px;"
+  )
+)
+```
+:::
+
+::: {.column width="50%"}
+```{r, echo = FALSE}
+htmltools::h3("Lives")
+link(
+  href = "https://www.youtube.com/c/CursoR6",
+  htmltools::img(src = "img/youtube.png", width = "200px")
+)
+```
+
+```{r, echo = FALSE}
+htmltools::h3("Material dos cursos")
+link(
+  href = "https://github.com/curso-r",
+  htmltools::img(src = "img/github.png", width = "230px")
+)
+```
+
+```{r, echo = FALSE}
+htmltools::h3("Blog")
+link(
+  href = "https://blog.curso-r.com/",
+  htmltools::img(src = "img/blog.png", width = "400px")
+)
+```
+:::
+:::
+
+## Cursos que a Curso-R oferece: {.smaller .scrollable}
+
+Use a barra de rolagem do navegador para ver tudo :D
+
+```{r, echo = FALSE}
+templatesR6::criar_slide_nossos_cursos()
+```
 
 ## Sobre essa apresentação {.center}
 
@@ -85,6 +162,8 @@ knitr::include_graphics("https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp
 -   Várias apresentações sobre R Markdown (especialmente apresentações com xaringan!): <https://beatrizmilz.com/talk/>
 
 -   Gosto de acompanhar, testar as novidades e assistir palestras!
+
+-   Para saber mais, recomendo essa palestra super recente do Tom Mock: [RMarkdown: reproducible reporting](https://jthomasmock.github.io/rmd-nhs/)
 
 ##  {.center}
 
@@ -168,6 +247,7 @@ TO DO!
 
 -   Escolha uma IDE. Exemplos que experimentei:
     -   [RStudio](https://quarto.org/docs/get-started/hello/rstudio.html) - Experimente o [Visual Markdown Editor](https://rstudio.github.io/visual-markdown-editing/)
+    -  [RStudio Cloud](https://rstudio.cloud/) 
     -   [Visual Studio code](https://quarto.org/docs/get-started/hello/vscode.html) - Instale também a [extensão do Quarto para VS Code](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
 
 <br>
@@ -182,23 +262,75 @@ TO DO!
 
 ::: panel-tabset
 ## New File
-<center>![](img/rstudio-newfile.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
 
+<center>
 
+![](img/rstudio-newfile.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 
 ## New Project
 
-<center>![](img/rstudio-newproject.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+<center>
+
+![](img/rstudio-newproject.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 
 ## Create Quarto Project
 
-<center>![](img/rstudio-create-quarto-project.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+<center>
+
+![](img/rstudio-create-quarto-project.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 
 ## Projeto Quarto criado
 
-<center>![](img/rstudio-quarto-project-created.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+<center>
+
+![](img/rstudio-quarto-project-created.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 :::
 
+## Quarto no RStudio Cloud
+
+::: panel-tabset
+
+## Diferenças
+
+- Similar ao RStudio: <https://rstudio.cloud/>
+
+- O quarto já vem instalado! 
+
+- Não tem a opção (até agora) de usar o "New project", apenas o "New file".
+
+- Atenção aos pacotes que é importante instalar antes:
+
+```r
+install.packages("jsonlite")
+install.packages("rmarkdown")
+install.packages("htmltools")
+```
+
+## New file
+
+<center>
+
+![](img/rstudio-cloud-1.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio Cloud" fig-align="center"}
+
+</center>
+
+## Render
+
+<center>
+
+![](img/rstudio-cloud-2.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio Cloud" fig-align="center"}
+
+</center>
+
+:::
 
 
 ## Quarto no terminal
@@ -206,8 +338,6 @@ TO DO!
 Você também pode usar o terminal para utilizar o Quarto.
 
 ::: panel-tabset
-
-
 ## Ver comandos disponíveis
 
 ``` bash
@@ -239,7 +369,6 @@ quarto help
         inspect         [path]             - Inspect a Quarto project or input path. Inspecting a project returns its config and engines.   
         tools           [command] [tool]   - Manage the installation, update, and uninstallation of useful tools.                           
         help            [command]          - Show this help or the help of a sub-command.    
-
 
 ## Criar um projeto
 
@@ -275,23 +404,15 @@ quarto render
       link-citations: true
       lang: en
       title: exemplo-quarto-project
-
-::: 
-
-
-
-## Quarto no VS Code
-
-::: panel-tabset
-## TO DO
-
-TO DO!
-
-
 :::
 
+## Quarto no VS Code {.center}
 
+<center>
 
+![](img/quarto-vscode-2.jpg){style="width: 100%; !important" fig-alt="Print screen da IDE VSCode" fig-align="center"}
+
+</center>
 
 
 ## Dicas para acompanhar as novidades {.center}
@@ -304,19 +425,38 @@ TO DO!
 
 -   Acompanhe as [discussions no GitHub](https://github.com/quarto-dev/quarto-cli/discussions)
 
+- Acompanhe o evento [rstudio:conf 2022](https://www.rstudio.com/conference/) 
+  - Keynote por [Mine Çetinkaya-Rundel](https://mine-cr.com/) & [Julia Stewart Lowndes](https://jules32.github.io/): Publishing and collaboration with Quarto.
+  - Estarei por lá! Me siga em [twitter.com/BeaMilz](https://twitter.com/BeaMilz)
+
 ## Futurologia {.center}
 
 -   O plano é lançar o Quarto versão 1.0 na rstudio::conf [#463](https://github.com/quarto-dev/quarto-cli/discussions/463#discussioncomment-2437882)
 
--   Edição colaborativa online? [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
+-   Edição colaborativa online?
+    [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
+    
+-   Com a chegada do Quarto, o R Markdown vai desaparecer? [Post em inglês por Yihui Xie](https://yihui.org/en/2022/04/quarto-r-markdown/) 
 
-## Materiais para ir mais longe {.center}
 
-[Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) - Post em inglês por [Alison Hill](https://www.apreshill.com/)
+## Materiais para ir mais longe {.center .smaller}
 
-[Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
+::: columns
+::: {.column width="50%"}
+-   [Documentação do Quarto](https://quarto.org/docs/gallery/)
 
+-   [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) - Post em inglês por [Alison Hill](https://www.apreshill.com/)
+
+-   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
+
+-   [Com a chegada do Quarto, o R Markdown vai desaparecer? Não.](https://yihui.org/en/2022/04/quarto-r-markdown/) - Post em inglês por [Yihui Xie](https://yihui.org/en/about/)
+:::
+
+::: {.column width="50%"}
 ![](https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif)
+:::
+:::
+
 
 ## Obrigada! {.center}
 
@@ -324,9 +464,9 @@ TO DO!
 ::: {.column width="50%"}
 Agradecimentos:
 
--   Julio Trecenti
+-   [Julio Trecenti](https://twitter.com/jtrecenti)
 
--   Steven Ross
+-   [Steven Ross](https://twitter.com/RJengajado)
 
 -   Organização do [VI SER](https://ser.uff.br)
 

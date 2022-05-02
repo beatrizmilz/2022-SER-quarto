@@ -31,7 +31,7 @@ $presentation-font-size-root: 35px;
 }
 
 
-.subtitle {
+.subtitle, .author {
   color: $presentation-heading-color;
   font-size: $h2-font-size;
 }
@@ -39,3 +39,4 @@ $presentation-font-size-root: 35px;
 .reveal .panel-tabset [role=tab] {
     font-size: 0.8em;
 }
+
