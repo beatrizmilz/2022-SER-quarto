@@ -12,7 +12,7 @@ format:
     slide-number: c/t
     show-slide-number: all
     hash-type: number
-    preview-links: true
+    preview-links: false
 ---
 
 ## Beatriz Milz {.center}
@@ -152,6 +152,7 @@ knitr::include_graphics("https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp
     -   Blogs
     -   Apresentações
     -   Textos acadêmicos (artigos científicos, relatórios, teses, etc)
+    -   Livros: Ex: [Análises ecológicas no R](https://analises-ecologicas.com/)
     -   Entre outros!
 
 ## Eu `r emo::ji("purple_heart")` R Markdown {.center}
@@ -261,17 +262,16 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
     -   Livros
     -   E mais está sendo produzido :)
 
-## Quais são as (principais) diferenças? 
+## Quais são as (principais) diferenças?
 
-::: panel-tabset 
-
+::: panel-tabset
 ## Necessidade do R
 
 ::: columns
 ::: {.column width="50%"}
-
 ### R Markdown
-::: {.nonincremental}
+
+::: nonincremental
 -   É um pacote em R.
 
 -   Precisamos ter o R instalado para renderizar o arquivo R Markdown.
@@ -281,12 +281,10 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 ::: {.column width="50%"}
 ### Quarto
 
-:::{.nonincremental}
-
+::: nonincremental
 -   É um outro software, precisa ser instalado.
 
 -   Não precisamos do R para renderizar o arquivo.
-
 :::
 :::
 :::
@@ -296,14 +294,16 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 ::: columns
 ::: {.column width="50%"}
 ### R Markdown
-:::{.nonincremental}
+
+::: nonincremental
 -   .Rmd
 :::
 :::
 
 ::: {.column width="50%"}
 ### Quarto
-:::{.nonincremental}
+
+::: nonincremental
 -   .qmd
 :::
 :::
@@ -315,7 +315,7 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 ::: {.column width="50%"}
 ### R Markdown
 
-::: {.nonincremental}
+::: nonincremental
 -   [Bootstrap](https://getbootstrap.com/): Por padrão, usa o v3.3.5.
 
 -   Para usar versões recentes do bootstrap, é necessário usar o pacote [bslib](https://rstudio.github.io/bslib/reference/index.html) [#1260](https://github.com/rstudio/rmarkdown/issues/1260)
@@ -324,7 +324,8 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 
 ::: {.column width="50%"}
 ### Quarto
-::: {.nonincremental}
+
+::: nonincremental
 -   [Bootstrap](https://getbootstrap.com/) v5.
 :::
 :::
@@ -335,14 +336,16 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 ::: columns
 ::: {.column width="50%"}
 ### R Markdown
-:::{.nonincremental}
+
+::: nonincremental
 -   Não tem suporte ao Observable JS.
 :::
 :::
 
 ::: {.column width="50%"}
 ### Quarto
-::: {.nonincremental}
+
+::: nonincremental
 -   Tem suporte ao Observable JS.
 :::
 :::
@@ -418,7 +421,8 @@ knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.
 
 ::: panel-tabset
 ## Diferenças
-::: {.nonincremental}
+
+::: nonincremental
 -   Similar ao RStudio: <https://rstudio.cloud/>
 
 -   O quarto já vem instalado!
@@ -433,6 +437,7 @@ install.packages("rmarkdown")
 install.packages("htmltools")
 ```
 :::
+
 ## New file
 
 <center>
@@ -532,12 +537,14 @@ quarto render
 </center>
 
 ## Vamos experimentar no RStudio Cloud! {.center .middle}
+
 <center>
+
 ### <https://rstudio.cloud/>
+
 </center>
 
 ![](https://media.giphy.com/media/rgHhWRnQAeAbCENCAF/giphy.gif)
-
 
 ## Dicas para acompanhar as novidades {.center}
 
